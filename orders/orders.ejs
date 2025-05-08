@@ -1,0 +1,180 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <title>Orders</title>
+        <style>
+#customers:not(#main) {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  border: 3px solid;
+}
+
+#customers td, #customers th {
+  border: 1px solid #000000;
+  padding: 8px;
+}
+
+
+input.larger {
+  width: 20px;
+  height: 20px;
+}
+
+#customers tr.main:nth-child(even){background-color: #ffc192;}
+
+#customers tr.main:nth-child(odd){background-color: #f4ffc2;}
+
+#customers tr.done{background-color: #999;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+#customers img{
+  max-width: 500px;
+  max-height: 500px;
+  display: block;
+}
+
+</style>
+
+</head>
+<script>
+</script>
+</head>
+<body bgcolor="#333">
+<table id="actions">
+  <!-- <% for (const [key, value] of Object.entries(userOrders)) { %>
+    <tr class="main">
+      <td><%= value.name %></td>
+      <td><a href="https://www.ebay.com/sh/ord?search=buyerusername%3A<%= value.userId %>" target="_blank"><%= value.userId %></a></td>
+    </tr>
+    <% } %> -->
+</table>
+<table id="customers">
+    <tr>
+      <th width="144px">User ID</th>
+      <th width="144px">Name</th>
+      <th width="144px">Buyer Note</th>
+      <th width="229px">Order Date</th>
+      <th width="100px">Item Count</th>
+      <th width="204px">Order Numbers</th>
+      <th width="100px">Order done</th>
+      <th>Items</th>
+    </tr>
+    <% for (const [key, value] of Object.entries(userOrders)) { %>
+        <tr class="main">
+          <td><%= value.name %></td>
+          <td><a href="https://www.ebay.com/sh/ord?search=buyerusername%3A<%= value.userId %>" target="_blank"><%= value.userId %></a></td>
+          <td><%= value.buyerNote %></td>
+          <td><%= value.orderDate %></td>
+          <td><%= value.items.length %></td>
+          <td><% for(let i=0; i<value.orderNumbers.length; i++) { %>
+            <a href="https://www.ebay.com/mesh/ord/details?mode=SH&srn=341&orderid=<%= value.orderNumbers[i] %>&source=Orders&ru=https%3A%2F%2Fwww.ebay.com%2Fsh%2Ford"><%= value.orderNumbers[i] %></a><br>
+          <% } %></td>
+          <td><input type="checkbox" class="done-checkbox larger" id="done-<%= value.orderNumbers.sort().join('-') %>" onclick="javascript:save(this, 'done')"><br>done</center></td></td>
+          <td>
+            <table class="done-<%= value.orderNumbers.sort().join('-') %>">
+                <% for(let i=0; i<value.items.length; i++) { %>
+                <tr bgcolor="#FFF" class="order_item" id="<%= value.userId %>-<%= i %>">
+                    <td><%= value.items[i].sku %></td>
+                    <td>Ship by <%= value.items[i].shipBy %></td>
+                    <td><%= value.items[i].hash + '-' + value.items[i].sku %></td>
+                    <td>
+                      <% if (value.items[i].imageFilename) { %>
+                      <button type="button" value="<%= value.items[i].imageFilename %>" class="open_image <%= value.userId %>-<%= i %>" onclick="javascript:openImage('<%= value.items[i].imageFilename %>')">
+                        <%= value.items[i].imageFilename %>
+                      </button> 
+                      <% } else { %>
+                        <button type="button" onclick="javascript:createNewTif('8x10', '<%= value.items[i].hash + '-' + value.items[i].sku %>')">
+                          8x10
+                        </button> 
+                        <button type="button" onclick="javascript:createNewTif('10x8', '<%= value.items[i].hash + '-' + value.items[i].sku %>')">
+                          10x8
+                        </button> 
+                      <% } %>
+                    </td>
+                    <td><img src="<%= value.items[i].thumbnail %>" style="width: 80"></td>
+                    <td><center><input type="checkbox" class="larger" id="<%= 'print-' + value.userId + '-' + value.items[i].hash + '-' + value.items[i].sku %>" class="<%= value.userId %>-<%= i %>" onclick="javascript:save(this, 'print')"><br>print</center></td>
+                    <td><center><input type="checkbox" class="larger" id="<%= 'cut-' + value.userId + '-' + value.items[i].hash + '-' + value.items[i].sku %>" onclick="javascript:save(this, 'cut')"><br>cut</center></td>
+                </tr>
+                <% } %>
+            </table>
+          </td>
+        </tr>
+    <% } %>
+
+
+    
+<script>
+  function save(e, type) {
+    const checked = JSON.parse((localStorage.getItem(type) || "{}"));
+    checked[e.id] = e.checked;
+    localStorage.setItem(type, JSON.stringify(checked));
+    // console.log(`${type} is set to ${localStorage.getItem(type)}`);
+  }
+  setInterval(() => {
+    ['print','cut','done'].forEach((type) => {
+      const checkedItems = JSON.parse(localStorage.getItem(type || "{}")) ;
+      for (const key in checkedItems) {
+        if (document.getElementById(key)) {
+          document.getElementById(key).checked = checkedItems[key];
+          // document.getElementById('open_all_images').disabled = true;
+          if (type === 'done') {
+            const totalCheckboxes = document.querySelectorAll(`table.${key} tr input`).length;
+            const checkedCheckboxes = document.querySelectorAll(`table.${key} tr input:checked`).length;
+            const tr = document.getElementById(key).closest('tr');
+            if (document.getElementById(key).checked && totalCheckboxes === checkedCheckboxes) {
+              tr.classList.remove("main");
+              tr.classList.add("done");
+            } else {
+              tr.classList.remove("done");
+              tr.classList.add("main");
+            }
+          }
+        }
+      }
+    });
+
+    const imageCount = `${document.getElementsByClassName('open_image').length} / ${document.getElementsByClassName('order_item').length}`
+    document.getElementById('open_all_images').innerText = `Open all images ${imageCount}`;
+  }, 1000);
+
+  function openAllImages(onlyUnprinted = true) {
+    document.getElementById('open_all_images').disabled = true;
+    let imageLinks = [];
+    if (onlyUnprinted) {
+      imageLinks = $('tr.order_item').has('input:not(:checked)').find('button').toArray();
+    } else {
+      imageLinks = document.getElementsByClassName('open_image');
+    }
+
+    for (let i = 0; i<imageLinks.length; i++) {
+      console.log('GET' + imageLinks[i].value);
+      const req = new XMLHttpRequest();
+      req.open("GET", `/images/${imageLinks[i].value}`);
+      req.send();
+    }
+  }
+
+  function openImage(filename) {
+    const req = new XMLHttpRequest();
+    req.open("GET", `/images/${filename}`);
+    req.send();
+  }
+  
+  function createNewTif(size, filename) {
+    // console.log("LINE 173", size, filename);
+    const req = new XMLHttpRequest();
+    req.open("GET", `/images/new/${size}/${filename}`);
+    req.send();
+  }
+  
+</script>
+</body>
+</html>

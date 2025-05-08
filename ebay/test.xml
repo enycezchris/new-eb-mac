@@ -1,0 +1,204 @@
+<?xml version= \"1.0\" encoding= \"UTF-8\"?>\n
+<AddItemsResponse xmlns= \"urn:ebay:apis:eBLBaseComponents\">
+    <Timestamp>2023-11-11T05:54:34.421Z</Timestamp>
+    <Ack>Failure</Ack>
+    <Errors>
+        <ShortMessage>Errors in Input Data.</ShortMessage>
+        <LongMessage>Errors in Input Data.Please try again.</LongMessage>
+        <ErrorCode>400</ErrorCode>
+        <SeverityCode>Error</SeverityCode>
+        <ErrorClassification>RequestError</ErrorClassification>
+    </Errors>
+    <Version>1335</Version>
+    <Build>E1335_UNI_API5_19110890_R1</Build>
+    <AddItemResponseContainer>
+        <CorrelationID>A001483</CorrelationID>
+        <Errors>
+            <ShortMessage>Funds from your sales may be unavailable and show as on hold for a period
+                of time.</ShortMessage>
+            <LongMessage>
+                Funds from your sales may be unavailable and show as on hold for a period
+                of time. Learn
+                more:https://www.ebay.com/help/selling/getting-paid/getting-paid-items-youve-sold/pending-payments?id=4816</LongMessage>
+            <ErrorCode>21917236</ErrorCode>
+            <SeverityCode>Warning</SeverityCode>
+            <ErrorParameters ParamID= \"0\">
+                <Value>Funds from your sales may be unavailable and show as on hold for a period of
+                    time.</Value>
+            </ErrorParameters>
+            <ErrorParameters ParamID= \"1\">
+                <Value>
+                    Funds from your sales may be unavailable and show as on hold for a period of
+                    time. Learn
+                    more:https://www.ebay.com/help/selling/getting-paid/getting-paid-items-youve-sold/pending-payments?id=4816</Value>
+            </ErrorParameters>
+            <ErrorParameters ParamID= \"2\">
+                <Value>PayPalHold</Value>
+            </ErrorParameters>
+            <ErrorParameters ParamID= \"3\">
+                <Value>
+                    https://www.ebay.com/help/selling/getting-paid/getting-paid-items-youve-sold/pending-payments?id=4816</Value>
+            </ErrorParameters>
+            <ErrorClassification>RequestError</ErrorClassification>
+        </Errors>
+        <Errors>
+            <ShortMessage>To require immediate payment, you must specify a Buy It Now price.</ShortMessage>
+            <LongMessage>To require immediate payment, you must specify a Buy It Now price.</LongMessage>
+            <ErrorCode>21917141</ErrorCode>
+            <SeverityCode>Error</SeverityCode>
+            <ErrorClassification>RequestError</ErrorClassification>
+        </Errors>
+    </AddItemResponseContainer>
+    <AddItemResponseContainer>
+        <CorrelationID>A001485</CorrelationID>
+        <Errors>
+            <ShortMessage>Funds from your sales may be unavailable and show as on hold for a period
+                of time.</ShortMessage>
+            <LongMessage>
+                Funds from your sales may be unavailable and show as on hold for a period
+                of time. Learn
+                more:https://www.ebay.com/help/selling/getting-paid/getting-paid-items-youve-sold/pending-payments?id=4816</LongMessage>
+            <ErrorCode>21917236</ErrorCode>
+            <SeverityCode>Warning</SeverityCode>
+            <ErrorParameters ParamID= \"0\">
+                <Value>Funds from your sales may be unavailable and show as on hold for a period of
+                    time.</Value>
+            </ErrorParameters>
+            <ErrorParameters ParamID= \"1\">
+                <Value>
+                    Funds from your sales may be unavailable and show as on hold for a period of
+                    time. Learn
+                    more:https://www.ebay.com/help/selling/getting-paid/getting-paid-items-youve-sold/pending-payments?id=4816</Value>
+            </ErrorParameters>
+            <ErrorParameters ParamID= \"2\">
+                <Value>PayPalHold</Value>
+            </ErrorParameters>
+            <ErrorParameters ParamID= \"3\">
+                <Value>
+                    https://www.ebay.com/help/selling/getting-paid/getting-paid-items-youve-sold/pending-payments?id=4816</Value>
+            </ErrorParameters>
+            <ErrorClassification>RequestError</ErrorClassification>
+        </Errors>
+        <Errors>
+            <ShortMessage>To require immediate payment, you must specify a Buy It Now price.</ShortMessage>
+            <LongMessage>To require immediate payment, you must specify a Buy It Now price.</LongMessage>
+            <ErrorCode>21917141</ErrorCode>
+            <SeverityCode>Error</SeverityCode>
+            <ErrorClassification>RequestError</ErrorClassification>
+        </Errors>
+    </AddItemResponseContainer>
+    <AddItemResponseContainer>
+        <CorrelationID>A001486</CorrelationID>
+        <Errors>
+            <ShortMessage>Funds from your sales may be unavailable and show as on hold for a period
+                of time.</ShortMessage>
+            <LongMessage>
+                Funds from your sales may be unavailable and show as on hold for a period
+                of time. Learn
+                more:https://www.ebay.com/help/selling/getting-paid/getting-paid-items-youve-sold/pending-payments?id=4816</LongMessage>
+            <ErrorCode>21917236</ErrorCode>
+            <SeverityCode>Warning</SeverityCode>
+            <ErrorParameters ParamID= \"0\">
+                <Value>Funds from your sales may be unavailable and show as on hold for a period of
+                    time.</Value>
+            </ErrorParameters>
+            <ErrorParameters ParamID= \"1\">
+                <Value>
+                    Funds from your sales may be unavailable and show as on hold for a period of
+                    time. Learn
+                    more:https://www.ebay.com/help/selling/getting-paid/getting-paid-items-youve-sold/pending-payments?id=4816</Value>
+            </ErrorParameters>
+            <ErrorParameters ParamID= \"2\">
+                <Value>PayPalHold</Value>
+            </ErrorParameters>
+            <ErrorParameters ParamID= \"3\">
+                <Value>
+                    https://www.ebay.com/help/selling/getting-paid/getting-paid-items-youve-sold/pending-payments?id=4816</Value>
+            </ErrorParameters>
+            <ErrorClassification>RequestError</ErrorClassification>
+        </Errors>
+        <Errors>
+            <ShortMessage>To require immediate payment, you must specify a Buy It Now price.</ShortMessage>
+            <LongMessage>To require immediate payment, you must specify a Buy It Now price.</LongMessage>
+            <ErrorCode>21917141</ErrorCode>
+            <SeverityCode>Error</SeverityCode>
+            <ErrorClassification>RequestError</ErrorClassification>
+        </Errors>
+    </AddItemResponseContainer>
+    <AddItemResponseContainer>
+        <CorrelationID>A0014DR</CorrelationID>
+        <Errors>
+            <ShortMessage>Funds from your sales may be unavailable and show as on hold for a period
+                of time.</ShortMessage>
+            <LongMessage>
+                Funds from your sales may be unavailable and show as on hold for a period
+                of time. Learn
+                more:https://www.ebay.com/help/selling/getting-paid/getting-paid-items-youve-sold/pending-payments?id=4816</LongMessage>
+            <ErrorCode>21917236</ErrorCode>
+            <SeverityCode>Warning</SeverityCode>
+            <ErrorParameters ParamID= \"0\">
+                <Value>Funds from your sales may be unavailable and show as on hold for a period of
+                    time.</Value>
+            </ErrorParameters>
+            <ErrorParameters ParamID= \"1\">
+                <Value>
+                    Funds from your sales may be unavailable and show as on hold for a period of
+                    time. Learn
+                    more:https://www.ebay.com/help/selling/getting-paid/getting-paid-items-youve-sold/pending-payments?id=4816</Value>
+            </ErrorParameters>
+            <ErrorParameters ParamID= \"2\">
+                <Value>PayPalHold</Value>
+            </ErrorParameters>
+            <ErrorParameters ParamID= \"3\">
+                <Value>
+                    https://www.ebay.com/help/selling/getting-paid/getting-paid-items-youve-sold/pending-payments?id=4816</Value>
+            </ErrorParameters>
+            <ErrorClassification>RequestError</ErrorClassification>
+        </Errors>
+        <Errors>
+            <ShortMessage>To require immediate payment, you must specify a Buy It Now price.</ShortMessage>
+            <LongMessage>To require immediate payment, you must specify a Buy It Now price.</LongMessage>
+            <ErrorCode>21917141</ErrorCode>
+            <SeverityCode>Error</SeverityCode>
+            <ErrorClassification>RequestError</ErrorClassification>
+        </Errors>
+    </AddItemResponseContainer>
+    <AddItemResponseContainer>
+        <CorrelationID>A001489</CorrelationID>
+        <Errors>
+            <ShortMessage>Funds from your sales may be unavailable and show as on hold for a period
+                of time.</ShortMessage>
+            <LongMessage>
+                Funds from your sales may be unavailable and show as on hold for a period
+                of time. Learn
+                more:https://www.ebay.com/help/selling/getting-paid/getting-paid-items-youve-sold/pending-payments?id=4816</LongMessage>
+            <ErrorCode>21917236</ErrorCode>
+            <SeverityCode>Warning</SeverityCode>
+            <ErrorParameters ParamID= \"0\">
+                <Value>Funds from your sales may be unavailable and show as on hold for a period of
+                    time.</Value>
+            </ErrorParameters>
+            <ErrorParameters ParamID= \"1\">
+                <Value>
+                    Funds from your sales may be unavailable and show as on hold for a period of
+                    time. Learn
+                    more:https://www.ebay.com/help/selling/getting-paid/getting-paid-items-youve-sold/pending-payments?id=4816</Value>
+            </ErrorParameters>
+            <ErrorParameters ParamID= \"2\">
+                <Value>PayPalHold</Value>
+            </ErrorParameters>
+            <ErrorParameters ParamID= \"3\">
+                <Value>
+                    https://www.ebay.com/help/selling/getting-paid/getting-paid-items-youve-sold/pending-payments?id=4816</Value>
+            </ErrorParameters>
+            <ErrorClassification>RequestError</ErrorClassification>
+        </Errors>
+        <Errors>
+            <ShortMessage>To require immediate payment, you must specify a Buy It Now price.</ShortMessage>
+            <LongMessage>To require immediate payment, you must specify a Buy It Now price.</LongMessage>
+            <ErrorCode>21917141</ErrorCode>
+            <SeverityCode>Error</SeverityCode>
+            <ErrorClassification>RequestError</ErrorClassification>
+        </Errors>
+    </AddItemResponseContainer>
+</AddItemsResponse>

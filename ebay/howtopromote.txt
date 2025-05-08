@@ -1,0 +1,44 @@
+curl 'https://www.ebay.com/sh/lst/promote?campaignId=14219696018' \
+  -H 'authority: www.ebay.com' \
+  -H 'accept: application/json' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'cache-control: max-age=0' \
+  -H 'content-type: application/json' \
+  -H 'cookie: __uzma=7c7d855a-647b-4e71-b2c7-46ddb57d68cb; __uzmb=1695773505; __uzme=3855; cid=sCLtzDsrpqvkNTNh%231874098903; shs=BAQAAAYrjYoBVAAaAAVUAD2b2FG8yMTgxODgzODI0MDA1LDJhzfQP76+MttvYdSj9QZPpiFYDaw**; shui-messages-SHIPPING_DISCOUNT_UPSELL-viewsLeft=999997; cpt=%5Ecpt_guid%3Ddf236b59-a14e-4168-b0fb-9369e7f0cfba%5Ecpt_prvd%3Drecaptcha_v2%5E; df236b59-a14e-4168-b0fb-9369e7f0cfba=CgAPmABdlHYFeNzQuNjQuMzYuODAsNzQuNjQuMzYuODAD5wAKZR2BXjE2OTY0MzI0Nzg5WjDi; shui-messages-SHIPPING_DISCOUNT_UPSELL-viewsLeft=999997; _tk=AQAGAAAAYMxbptVTUlHzoL+Hmb67wBgqp4EfliTUXf2CVe3/WhSr7lFpi51tApRjltNw18V6+/MbodgEzOhUn5VCboNuuKI8sK9jzWv6WAVdcfhRL/8ukzLWBXUH5KWJgpOaSyW/DQ; ak_bmsc=4FE86B4B80EE70B7B48863E532075803~000000000000000000000000000000~YAAQp3lGaMZZdfiKAQAA8PE8+xVa8GJEivOQFsek+wvmvqDdADGsEw20YB1y1zjE3SyC56bnlZ1xSTXYgtwxwcUERQmWNi8cAjtdEcRa4U2ifVyilzpTPfQZd5O/NB+TaVQ7UqT8jANjwQLhGZpQ6n00tle6i5Tkon9rk69VWspqjIa70xShwbID2p2uAQJBdr2hCPMN/WDX6PtMmcjtE9JxAq1DLx271E8nAIidtPhBZrYOyyqamcdcTPaoGIANFHtobkMRAOkQUAeDDQrCngc7PvFZtGOkfWioiAJ890/awaEAgTpT1ODUaJs4j6NK5tO738WDpA3SqGzpEVKC2b4l7qeyEutu+MvlaVd/paFns55XTZJRzEKf/DjZdtDLwS7zR3eIKfCs007nbQ==; __uzmc=7001753874619; __uzmd=1696433019; __uzmf=7f6000dbce3b73-b52e-4a6c-85bc-534e7a7d75921695773505268659514721-8ea4ff5ec67d9bc2538; s=CgADuACZlHtVIMTQGaHR0cHM6Ly93d3cuZWJheS5jb20vc2gvbHN0L2FjdGl2ZQcA+AAgZR7PJmQzZmEyZTg3MThhMGE0NGQyNzI3YzJiZGZmZmZiZmM4WKZtVQ**; __deba=rFjpPl8BP5YIl14587xG7zCLGUvb1QS_jbqOzwDZUujqyTZ6dn2KBHDkmgsze6r7XR8UW1J2_XMwSXzXGqPFGPz0rd8cbBa0Q7RcAZly95cb8YAPwf1ogEZifVCEyFNo38b53cFzhN15YnHm1kIJlw==; dp1=bu1p/cmVhZHlzZXRhY3Rpb24*68dfeb0a^kms/in68dfeb0a^pbf/%230002000000e000e0000000800200000466feb78a^u1f/Kinabee68dfeb0a^expt/0001696433156361660e1dc4^bl/US68dfeb0a^; ns1=BAQAAAYpI47hYAAaAAKUADGb+t4o5NTM0NTgzMzgvMDuGAgvc2aNUI5FIo8qUHfuzSqJ14g**; nonsession=BAQAAAYpI47hYAAaAAAQADmb2FG9yZWFkeXNldGFjdGlvbgAQAA5m/reKcmVhZHlzZXRhY3Rpb24AMwAOZv63ijEwMDAyLTM2MjYsVVNBAEAADmb+t4pyZWFkeXNldGFjdGlvbgCcADhm/reKblkrc0haMlByQm1kajZ3Vm5ZK3NFWjJQckEyZGo2d05sWUdsRFppQm9nU2RqNng5blkrc2VRPT0AnQAIZv63ijAwMDAwMDAwAMoAIGjf6wpkM2ZhMmU4NzE4YTBhNDRkMjcyN2MyYmRmZmZmYmZjOADLAANlHYsSMzMxAWQAB2jf6wojMDAwMDBhiAdpfBmAthOzPxNUz+Tts86EZ8Q*; bm_sv=F533D319DB17CA9096739C8EF1C6C3C8~YAAQzXlGaCInx/eKAQAANslL+xXYgaXxy8FnIGHOBnVRTApV6FiYDzD6WTpUQlme67rvoWzfv7NyIzrdAJzUrSqniXecnmhBiTAfWpW7yk7UTPHbWKFjXjSYuTM6VwkJzLS+Yi+2JLr4NZ4WVyJLScFZPEuLF5JI0zoqXDMKja/kRcgbgqn5HKzf5pnKlwtH0JIw3hKczRrIjXFNQBSjibHpm4zoIapzhhBLFsauDpl1PZVeDrri0oMMSEgCLUY4~1; ebay=%5Ejs%3D1%5Esbf%3D%23000000%5Epsi%3DAS6c71Hc*%5E; ds2=sotr/b95E4zzzzzzz^; totp=1696433171954.QCMN8dinAn9AwjRAI4eDAHDPlwHUG5MbxUxM/ceht0BRbUR7MfKVWtQT1Gi2XkaqwsePbsaVqHNK/VPncAh0dA==.SJ3-AsHt8HMgo6X8d-58LQsEnPWPBF1hGlKbQvmnpQQ' \
+  -H 'origin: https://www.ebay.com' \
+  -H 'referer: https://www.ebay.com/sh/lst/active' \
+  -H 'sec-ch-ua: "Google Chrome";v="117", "Not;A=Brand";v="8", "Chromium";v="117"' \
+  -H 'sec-ch-ua-full-version: "117.0.5938.92"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-model: ""' \
+  -H 'sec-ch-ua-platform: "macOS"' \
+  -H 'sec-ch-ua-platform-version: "13.5.2"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36' \
+  --data-raw '{"marketplaceId":"EBAY_US","adRate":"13.5","autoAdRate":true,"campaignId":"14219696018","items":[{"itemId":"175941317283"}],"isStopPromote":false,"isEditFlow":false}' \
+  --compressed
+
+  fetch("https://www.ebay.com/sh/lst/promote?campaignId=14219696018", {
+  "headers": {
+    "accept": "application/json",
+    "accept-language": "en-US,en;q=0.9",
+    "cache-control": "max-age=0",
+    "content-type": "application/json",
+    "sec-ch-ua": "\"Google Chrome\";v=\"117\", \"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"117\"",
+    "sec-ch-ua-full-version": "\"117.0.5938.92\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-model": "\"\"",
+    "sec-ch-ua-platform": "\"macOS\"",
+    "sec-ch-ua-platform-version": "\"13.5.2\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin",
+    "cookie": "__uzma=7c7d855a-647b-4e71-b2c7-46ddb57d68cb; __uzmb=1695773505; __uzme=3855; cid=sCLtzDsrpqvkNTNh%231874098903; shs=BAQAAAYrjYoBVAAaAAVUAD2b2FG8yMTgxODgzODI0MDA1LDJhzfQP76+MttvYdSj9QZPpiFYDaw**; shui-messages-SHIPPING_DISCOUNT_UPSELL-viewsLeft=999997; cpt=%5Ecpt_guid%3Ddf236b59-a14e-4168-b0fb-9369e7f0cfba%5Ecpt_prvd%3Drecaptcha_v2%5E; df236b59-a14e-4168-b0fb-9369e7f0cfba=CgAPmABdlHYFeNzQuNjQuMzYuODAsNzQuNjQuMzYuODAD5wAKZR2BXjE2OTY0MzI0Nzg5WjDi; shui-messages-SHIPPING_DISCOUNT_UPSELL-viewsLeft=999997; _tk=AQAGAAAAYMxbptVTUlHzoL+Hmb67wBgqp4EfliTUXf2CVe3/WhSr7lFpi51tApRjltNw18V6+/MbodgEzOhUn5VCboNuuKI8sK9jzWv6WAVdcfhRL/8ukzLWBXUH5KWJgpOaSyW/DQ; ak_bmsc=4FE86B4B80EE70B7B48863E532075803~000000000000000000000000000000~YAAQp3lGaMZZdfiKAQAA8PE8+xVa8GJEivOQFsek+wvmvqDdADGsEw20YB1y1zjE3SyC56bnlZ1xSTXYgtwxwcUERQmWNi8cAjtdEcRa4U2ifVyilzpTPfQZd5O/NB+TaVQ7UqT8jANjwQLhGZpQ6n00tle6i5Tkon9rk69VWspqjIa70xShwbID2p2uAQJBdr2hCPMN/WDX6PtMmcjtE9JxAq1DLx271E8nAIidtPhBZrYOyyqamcdcTPaoGIANFHtobkMRAOkQUAeDDQrCngc7PvFZtGOkfWioiAJ890/awaEAgTpT1ODUaJs4j6NK5tO738WDpA3SqGzpEVKC2b4l7qeyEutu+MvlaVd/paFns55XTZJRzEKf/DjZdtDLwS7zR3eIKfCs007nbQ==; __uzmc=7001753874619; __uzmd=1696433019; __uzmf=7f6000dbce3b73-b52e-4a6c-85bc-534e7a7d75921695773505268659514721-8ea4ff5ec67d9bc2538; s=CgADuACZlHtVIMTQGaHR0cHM6Ly93d3cuZWJheS5jb20vc2gvbHN0L2FjdGl2ZQcA+AAgZR7PJmQzZmEyZTg3MThhMGE0NGQyNzI3YzJiZGZmZmZiZmM4WKZtVQ**; __deba=rFjpPl8BP5YIl14587xG7zCLGUvb1QS_jbqOzwDZUujqyTZ6dn2KBHDkmgsze6r7XR8UW1J2_XMwSXzXGqPFGPz0rd8cbBa0Q7RcAZly95cb8YAPwf1ogEZifVCEyFNo38b53cFzhN15YnHm1kIJlw==; dp1=bu1p/cmVhZHlzZXRhY3Rpb24*68dfeb0a^kms/in68dfeb0a^pbf/%230002000000e000e0000000800200000466feb78a^u1f/Kinabee68dfeb0a^expt/0001696433156361660e1dc4^bl/US68dfeb0a^; ns1=BAQAAAYpI47hYAAaAAKUADGb+t4o5NTM0NTgzMzgvMDuGAgvc2aNUI5FIo8qUHfuzSqJ14g**; nonsession=BAQAAAYpI47hYAAaAAAQADmb2FG9yZWFkeXNldGFjdGlvbgAQAA5m/reKcmVhZHlzZXRhY3Rpb24AMwAOZv63ijEwMDAyLTM2MjYsVVNBAEAADmb+t4pyZWFkeXNldGFjdGlvbgCcADhm/reKblkrc0haMlByQm1kajZ3Vm5ZK3NFWjJQckEyZGo2d05sWUdsRFppQm9nU2RqNng5blkrc2VRPT0AnQAIZv63ijAwMDAwMDAwAMoAIGjf6wpkM2ZhMmU4NzE4YTBhNDRkMjcyN2MyYmRmZmZmYmZjOADLAANlHYsSMzMxAWQAB2jf6wojMDAwMDBhiAdpfBmAthOzPxNUz+Tts86EZ8Q*; bm_sv=F533D319DB17CA9096739C8EF1C6C3C8~YAAQzXlGaCInx/eKAQAANslL+xXYgaXxy8FnIGHOBnVRTApV6FiYDzD6WTpUQlme67rvoWzfv7NyIzrdAJzUrSqniXecnmhBiTAfWpW7yk7UTPHbWKFjXjSYuTM6VwkJzLS+Yi+2JLr4NZ4WVyJLScFZPEuLF5JI0zoqXDMKja/kRcgbgqn5HKzf5pnKlwtH0JIw3hKczRrIjXFNQBSjibHpm4zoIapzhhBLFsauDpl1PZVeDrri0oMMSEgCLUY4~1; ebay=%5Ejs%3D1%5Esbf%3D%23000000%5Epsi%3DAS6c71Hc*%5E; ds2=sotr/b95E4zzzzzzz^; totp=1696433171954.QCMN8dinAn9AwjRAI4eDAHDPlwHUG5MbxUxM/ceht0BRbUR7MfKVWtQT1Gi2XkaqwsePbsaVqHNK/VPncAh0dA==.SJ3-AsHt8HMgo6X8d-58LQsEnPWPBF1hGlKbQvmnpQQ",
+    "Referer": "https://www.ebay.com/sh/lst/active",
+    "Referrer-Policy": "unsafe-url"
+  },
+  "body": "{\"marketplaceId\":\"EBAY_US\",\"adRate\":\"13.5\",\"autoAdRate\":true,\"campaignId\":\"14219696018\",\"items\":[{\"itemId\":\"175941317283\"}],\"isStopPromote\":false,\"isEditFlow\":false}",
+  "method": "POST"
+});
